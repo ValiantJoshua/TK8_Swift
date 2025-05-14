@@ -21,7 +21,6 @@ int main(){
 	char op;
 
 	printf("=== KALKULATOR ===\n\n");
-	do{
 		printf("Masukkan Angka Pertama: ");
 		scanf("%d", &a);
 		printf("Masukkan Operator: ");
@@ -49,5 +48,6 @@ int main(){
 			default :
 				printf("Operation Invalid! Try Again.\n\n");
 				break;
+	
 	return 0;
 }
