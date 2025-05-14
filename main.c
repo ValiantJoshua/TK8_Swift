@@ -12,7 +12,7 @@ int multiplication (int a, int b) {
 	return a * b;
 }
 
-int division (int a, int b){
+int division (int a, int b) {
 	return a / b;
 }
 
@@ -41,6 +41,10 @@ int main() {
 			printf("Operasi Perkalian %d terhadap %d adalah %d\n\n", a, b, ans);
 			break;
 		case '/':
+			if (b == 0) {
+				printf("Cannot divide by 0");
+				return 1;
+			}
 			ans = division(a, b);
 			printf("Operasi Pembagian %d terhadap %d adalah %d\n\n", a, b, ans);
 			break;
