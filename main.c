@@ -24,7 +24,7 @@ int main() {
 	printf("Masukkan Angka Pertama: ");
 	scanf("%d", &a);
 	printf("Masukkan Operator: ");
-	scanf("%c", &op);
+	scanf(" %c", &op);
 	printf("Masukkan Angka Kedua: ");
 	scanf("%d", &b);
 
@@ -34,6 +34,7 @@ int main() {
 			printf("Operasi Pertambahan %d terhadap %d adalah %d\n\n", a, b, ans);
 			break;
 		case '-':
+			ans = subtraction(a, b);
 			printf("Operasi Pengurangan %d terhadap %d adalah %d\n\n", a, b, ans);
 			break;
 		case '*':
@@ -53,5 +54,5 @@ int main() {
 			break;
 	}
 	
-	return 0;
+return 0;
 }
